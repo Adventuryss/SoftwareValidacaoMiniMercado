@@ -48,9 +48,9 @@ public class FramePrincipal extends javax.swing.JFrame {
             language = "it";    
         }
 
-        File myObj = new File("C:\\Project_market\\language.txt");
+        File myObj = new File("C:\\internacionalizacao.txt");
         if (myObj.createNewFile()) {
-            FileWriter myWriter = new FileWriter("C:\\Project_market\\language.txt");
+            FileWriter myWriter = new FileWriter("C:\\internacionalizacao.txt");
             myWriter.write(language);
             myWriter.close();
         }
@@ -62,7 +62,7 @@ public class FramePrincipal extends javax.swing.JFrame {
         traduzirElementos traduzir = new traduzirElementos();
         String language;
 
-        BufferedReader reader = new BufferedReader(new FileReader("C:\\Project_market\\language.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("C:\\internacionalizacao.txt"));
         language = reader.readLine();
         reader.close();
         
@@ -566,10 +566,10 @@ public class FramePrincipal extends javax.swing.JFrame {
         
 
         try {
-            File myObj = new File("C:\\Project_market\\language.txt");                      // Grava as informações dos comboBox
+            File myObj = new File("C:\\internacionalizacao.txt");                      // Grava as informações dos comboBox
             if (myObj.createNewFile()) {
 
-                FileWriter myWriter = new FileWriter("C:\\Project_market\\language.txt");
+                FileWriter myWriter = new FileWriter("C:\\internacionalizacao.txt");
                 myWriter.write(language);
                 myWriter.write("\r\n");
                 myWriter.write(moeda);
@@ -578,7 +578,7 @@ public class FramePrincipal extends javax.swing.JFrame {
 
                 myWriter.close();
             } else {
-                FileWriter myWriter = new FileWriter("C:\\Project_market\\language.txt");
+                FileWriter myWriter = new FileWriter("C:\\internacionalizacao.txt");
                 myWriter.write(language);
                 myWriter.write("\r\n");
                 myWriter.write(moeda);
