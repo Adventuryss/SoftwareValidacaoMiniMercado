@@ -53,7 +53,7 @@ public class RealizarVenda extends javax.swing.JFrame {
             traduzirElementos traduzir = new traduzirElementos();
             String language;
 
-            BufferedReader reader = new BufferedReader(new FileReader("C:\\Project_market\\language.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("C:\\internacionalizacao.txt"));
             language = reader.readLine();
             reader.close();
 
@@ -101,7 +101,7 @@ public class RealizarVenda extends javax.swing.JFrame {
     }
     
     public void detectarEAplicarTimeZone() throws FileNotFoundException, IOException {
-        File file = new File("C:\\Project_market\\language.txt");
+        File file = new File("C:\\internacionalizacao.txt");
         String zonaDoArquivo = "";
         
         try (FileReader fr = new FileReader(file)) {
@@ -129,7 +129,7 @@ public class RealizarVenda extends javax.swing.JFrame {
     public void detectCurrency() throws FileNotFoundException, IOException{
         String moeda;
         
-        BufferedReader reader = new BufferedReader(new FileReader("C:\\Project_market\\language.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("C:\\internacionalizacao.txt"));
         reader.readLine(); // consume first line and ignore
         moeda = reader.readLine();
 

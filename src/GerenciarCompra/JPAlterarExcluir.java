@@ -58,7 +58,7 @@ public class JPAlterarExcluir extends javax.swing.JFrame {
             traduzirElementos traduzir = new traduzirElementos();
             String language;
 
-            BufferedReader reader = new BufferedReader(new FileReader("C:\\Project_market\\language.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("C:\\internacionalizacao.txt"));
             language = reader.readLine();
             reader.close();
 
