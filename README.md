@@ -13,7 +13,7 @@ Para o funcionamento do software de validação, é necessário adicionar todos 
 
 A pasta "JARs Necessários", é onde pode ser encontrado todos os JARs obrigatórios para o funcionamento da biblioteca. Menos o JAR "mysql-connector-java-5.1.47", que é responsável pela conexão MySQL da aplicação do minimercado. Na pasta "Biblioteca Jar", é onde pode ser encontrada a Biblioteca de Internacionalização.
 
-Caso o projeto fique vermelho, como se mostrasse um erro, provavelmente é apenas ele procurando os .jars em uma pasta diferente. 
+Caso o projeto fique vermelho, como se mostrasse um erro, provavelmente é apenas ele procurando os .jars em uma pasta diferente. O que não impede o funcionamento normal da aplicação.
 
 Qualquer dúvida ou problema:
 bruno.fonseca@ufn.edu.br
